@@ -1,0 +1,8 @@
+[build]
+builder = "dockerfile"
+dockerfilePath = "Dockerfile"
+
+[deploy]
+startCommand = "pnpm --filter @paperclipai/server start"
+healthcheckPath = "/health"
+healthcheckTimeout = 30
