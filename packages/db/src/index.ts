@@ -10,13 +10,13 @@ export {
   migratePostgresIfEmpty,
   type MigrationBootstrapResult,
   type Db,
-} from "./client.ts";
+} from "./client";
 export {
   getEmbeddedPostgresTestSupport,
   startEmbeddedPostgresTestDatabase,
   type EmbeddedPostgresTestDatabase,
   type EmbeddedPostgresTestSupport,
-} from "./test-embedded-postgres.ts";
+} from "./test-embedded-postgres";
 export {
   runDatabaseBackup,
   runDatabaseRestore,
@@ -24,10 +24,10 @@ export {
   type RunDatabaseBackupOptions,
   type RunDatabaseBackupResult,
   type RunDatabaseRestoreOptions,
-} from "./backup-lib.ts";
+} from "./backup-lib";
 export {
   createEmbeddedPostgresLogBuffer,
   formatEmbeddedPostgresError,
-} from "./embedded-postgres-error.ts";
-export { issueRelations } from "./schema/issue_relations.ts";
-export * from "./schema/index.ts";
+} from "./embedded-postgres-error";
+export { issueRelations } from "./schema/issue_relations";
+export * from "./schema/index";
